@@ -3,114 +3,129 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Sign Up - My Web Storefront</title>
+
+    <title>GameZone - Sign Up</title>
+
     <!-- Bootstrap CSS CDN -->
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css"
           rel="stylesheet">
-    <!-- Your Custom CSS -->
+
+    <!-- External CSS -->
     <link rel="stylesheet" href="style.css">
 </head>
+
 <body>
+
     <!-- Header -->
-    <header class="bg-dark text-white text-center p-4">
-        <h1>My Web Storefront</h1>
-        <p>Welcome to my online store!</p>
+    <header>
+        <div class="logo">🎮 GameZone</div>
+        <p>Your Ultimate Gaming Store</p>
     </header>
-    <!-- Navigation Bar -->
-    <nav class="navbar navbar-expand-lg navbar-dark bg-primary">
-        <div class="container">
-            <a class="navbar-brand" href="storefront.html">My Store</a>
-            <button class="navbar-toggler" type="button"
-                    data-bs-toggle="collapse"
-                    data-bs-target="#navbarNav">
-                <span class="navbar-toggler-icon"></span>
-            </button>
-            <div class="collapse navbar-collapse" id="navbarNav">
-                <ul class="navbar-nav ms-auto">
-                    <li class="nav-item">
-                        <a class="nav-link" href="storefront.html">Home</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link active" href="signup.html">Sign Up</a>
-                    </li>
-                </ul>
-            </div>
-        </div>
+
+    <!-- Navigation -->
+    <nav>
+        <a href="storefront.html">Home</a>
+        <a href="storefront.html#games">Games</a>
+        <a href="storefront.html#accessories">Accessories</a>
+        <a href="storefront.html#about">About</a>
+        <a href="signup.html">Sign Up</a>
     </nav>
+
     <!-- Main Content -->
-    <main class="container my-5">
-        <div class="row justify-content-center">
-            <div class="col-md-6">
-                <div class="card shadow">
-                    <div class="card-body p-4">
-                        <h2 class="text-center mb-4">Create an Account</h2>
-                        <form>
-                            <!-- Username -->
-                            <div class="mb-3">
-                                <label for="username" class="form-label">
-                                    Username
-                                </label>
-                                <input type="text"
-                                       class="form-control"
-                                       id="username"
-                                       name="username"
-                                       placeholder="Enter your username"
-                                       required>
-                            </div>
-                            <!-- Email -->
-                            <div class="mb-3">
-                                <label for="email" class="form-label">
-                                    Email
-                                </label>
-                                <input type="email"
-                                       class="form-control"
-                                       id="email"
-                                       name="email"
-                                       placeholder="Enter your email"
-                                       required>
-                            </div>
-                            <!-- Password -->
-                            <div class="mb-3">
-                                <label for="password" class="form-label">
-                                    Password
-                                </label>
-                                <input type="password"
-                                       class="form-control"
-                                       id="password"
-                                       name="password"
-                                       placeholder="Enter your password"
-                                       required>
-                            </div>
-                            <!-- Confirm Password -->
-                            <div class="mb-3">
-                                <label for="confirmPassword" class="form-label">
-                                    Confirm Password
-                                </label>
-                                <input type="password"
-                                       class="form-control"
-                                       id="confirmPassword"
-                                       name="confirmPassword"
-                                       placeholder="Confirm your password"
-                                       required>
-                            </div>
-                            <!-- Sign Up Button -->
-                            <div class="d-grid">
-                                <button type="submit" class="btn btn-primary">
-                                    Sign Up
-                                </button>
-                            </div>
-                        </form>
+    <main>
+
+        <div class="signup-container">
+
+            <div class="signup-card">
+
+                <h2>Create Your GameZone Account</h2>
+
+                <form>
+
+                    <!-- Username -->
+                    <div class="mb-3">
+                        <label for="username" class="form-label">
+                            Username
+                        </label>
+
+                        <input
+                            type="text"
+                            class="form-control"
+                            id="username"
+                            name="username"
+                            placeholder="Enter your username"
+                            required>
                     </div>
-                </div>
+
+                    <!-- Email -->
+                    <div class="mb-3">
+                        <label for="email" class="form-label">
+                            Email
+                        </label>
+
+                        <input
+                            type="email"
+                            class="form-control"
+                            id="email"
+                            name="email"
+                            placeholder="Enter your email"
+                            required>
+                    </div>
+
+                    <!-- Password -->
+                    <div class="mb-3">
+                        <label for="password" class="form-label">
+                            Password
+                        </label>
+
+                        <input
+                            type="password"
+                            class="form-control"
+                            id="password"
+                            name="password"
+                            placeholder="Enter your password"
+                            required>
+                    </div>
+
+                    <!-- Confirm Password -->
+                    <div class="mb-3">
+                        <label for="confirmPassword" class="form-label">
+                            Confirm Password
+                        </label>
+
+                        <input
+                            type="password"
+                            class="form-control"
+                            id="confirmPassword"
+                            name="confirmPassword"
+                            placeholder="Confirm your password"
+                            required>
+                    </div>
+
+                    <!-- Sign Up Button -->
+                    <div class="d-grid mt-4">
+                        <button type="submit" class="btn btn-primary">
+                            Create Account
+                        </button>
+                    </div>
+
+                </form>
+
             </div>
+
         </div>
+
     </main>
+
     <!-- Footer -->
-    <footer class="bg-dark text-white text-center p-3">
-        <p class="mb-0">&copy; 2026 My Web Storefront. All Rights Reserved.</p>
+    <footer>
+        <p>&copy; 2026 GameZone. All Rights Reserved.</p>
+        <p>Your Ultimate Gaming Store</p>
     </footer>
+
     <!-- Bootstrap JavaScript CDN -->
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js">
     </script>
+
 </body>
 </html>
