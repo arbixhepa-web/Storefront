@@ -51,6 +51,10 @@ main {
 /* Announcement */
 .announcement {
     background-color: #2563eb;
+    padding: 20px;
+    text-align: center;
+    border-radius: 10px;
+    margin-bottom: 30px;
 }
 
 /* Products */
@@ -107,6 +111,55 @@ button:hover {
     background-color: #1f2937;
     padding: 30px;
     border-radius: 10px;
+}
+
+/* Signup Page */
+.signup-container {
+    max-width: 600px;
+    margin: 50px auto;
+}
+
+.signup-card {
+    background-color: #1f2937;
+    padding: 30px;
+    border-radius: 10px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.4);
+}
+
+.signup-card h2 {
+    text-align: center;
+    margin-bottom: 25px;
+}
+
+.signup-card .form-label {
+    font-weight: bold;
+}
+
+.signup-card .form-control {
+    background-color: #374151;
+    color: white;
+    border: 1px solid #6b7280;
+}
+
+.signup-card .form-control::placeholder {
+    color: #d1d5db;
+}
+
+.signup-card .form-control:focus {
+    background-color: #374151;
+    color: white;
+    border-color: #2563eb;
+    box-shadow: 0 0 0 0.25rem rgba(37, 99, 235, 0.25);
+}
+
+.signup-card .btn {
+    background-color: #2563eb;
+    border: none;
+    font-weight: bold;
+}
+
+.signup-card .btn:hover {
+    background-color: #1d4ed8;
 }
 
 /* Footer */
